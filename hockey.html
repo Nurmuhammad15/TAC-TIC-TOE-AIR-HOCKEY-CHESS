@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Hockey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hockey">
+    <div class="container">
+        <canvas id="rink"></canvas>
+    </div>
+
+    <div class="overlay" id="pauseMenu" hidden>
+        <div class="buttons">
+            <button class="btn btn-play" id="resume">ПРОДОЛЖИТЬ</button>
+            <button class="btn btn-blue" id="restart">ЗАНОВО</button>
+            <a class="btn btn-orange" href="index.html">МЕНЮ</a>
+        </div>
+    </div>
+
+    <script src="guard.js"></script>
+    <script src="hockey.js"></script>
+</body>
+</html>

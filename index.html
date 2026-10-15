@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-menu">
+            <h2>SELECT LEVEL</h2>
+
+            <div class="levels">
+                <div class="slide" data-href="game.html">
+                    <div class="board" id="board"></div>
+                </div>
+                <div class="slide" data-href="hockey.html">
+                    <div class="rink">
+                        <div class="rink-line"></div>
+                        <div class="rink-circle"></div>
+                        <div class="rink-goal top"></div>
+                        <div class="rink-goal bottom"></div>
+                        <div class="rink-paddle p-top"></div>
+                        <div class="rink-paddle p-bottom"></div>
+                        <div class="rink-puck"></div>
+                    </div>
+                </div>
+                <div class="slide" data-href="chess.html">
+                    <div class="chess-preview" id="chessPreview"></div>
+                </div>
+                <button class="arrow arrow-left" id="prev" aria-label="Previous" hidden></button>
+                <button class="arrow arrow-right" id="next" aria-label="Next"></button>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-orange">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22c0-5 3.5-8 8-8s8 3 8 8z"/></svg>
+                    <span>VS</span>
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22c0-5 3.5-8 8-8s8 3 8 8z"/></svg>
+                </button>
+                <a class="btn btn-play" href="game.html">ИГРАТЬ</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
